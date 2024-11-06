@@ -1,0 +1,210 @@
+/* Import font-family */
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:wght@500&display=swap');
+
+/* Variables */
+:root {
+    --border-radius: 10px;
+}
+
+/* Global Styles */
+* {
+    outline: none;
+    font-family: 'Comfortaa';
+}
+
+html,
+body {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    background: url('background.jpg') center center/cover no-repeat;
+    background-attachment: fixed; /* Keeps the background in place during scroll */
+}
+
+/* Session Time */
+#sessionTime {
+    display: none;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    top: 10px;
+    right: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: var(--border-radius);
+}
+
+/* Room */
+#roomPage {
+    position: absolute;
+    display: none;
+}
+
+/* Home Sign in */
+#signInPage {
+    position: absolute;
+    display: block;
+}
+
+/* General Card Styles */
+.card {
+    max-width: 400px !important;
+    margin: 0 auto !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    border: none !important;
+    border-radius: 10px !important;
+    background: rgb(0 0 0 / 7%) !important;
+}
+
+.card-header h1 {
+    margin-top: 15px;
+}
+
+/* Video Styles */
+video {
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: var(--border-radius);
+    object-fit: contain;
+    cursor: pointer;
+}
+video:hover {
+    filter: contrast(105%);
+}
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+/* Local Video Styles */
+#localVideoContainer {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 15vw;
+    height: 15vh;
+    border-radius: var(--border-radius);
+    border: none;
+}
+
+#localUsername {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    font-size: x-small;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* Remote Video Styles */
+#remoteVideo {
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: var(--border-radius);
+    border: none;
+}
+
+/* Hidden Elements */
+.hide {
+    display: none;
+}
+
+input {
+    text-align: center;
+}
+
+/* Text Input Styles */
+#callUsernameIn {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+}
+
+/* Placeholder Styles */
+#callUsernameIn::placeholder {
+    color: #525252;
+    opacity: 1;
+}
+
+/* Center Alignment */
+.center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Custom button */
+.btn-custom {
+    height: 48px;
+    width: 48px;
+    margin: 0.1rem;
+    border: none;
+    border-radius: 50px !important;
+}
+
+/* GitHub div */
+#githubDiv {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Swal2 custom theme */
+.swal2-popup {
+    background-color: #333 !important;
+    color: #fff !important;
+    border: none !important;
+}
+.swal2-popup .swal2-styled:focus {
+    box-shadow: none !important;
+}
+.swal2-title {
+    color: #fff !important;
+}
+.swal2-actions .swal2-confirm {
+    background-color: #157346 !important;
+    color: #fff !important;
+    border: none !important;
+}
+.swal2-actions .swal2-cancel {
+    background-color: #666 !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+/* Webkit-Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: radial-gradient(#333, #000000);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: radial-gradient(#333, #000000);
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1b1f;
+}
